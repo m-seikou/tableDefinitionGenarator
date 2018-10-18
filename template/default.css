@@ -1,0 +1,49 @@
+nav {
+    width: 300px;
+    float: left;
+}
+
+nav h1 {
+    font-size: 25px;
+}
+
+nav label{
+    display: block;
+    font-size: 20px;
+}
+
+nav input{
+    display: none;
+}
+
+nav .accordion{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+nav input:checked + .accordion {
+    height: auto;
+    opacity: 1;
+}
+
+article {
+    margin-left: 300px;
+}
+
+table .key_seq_1 {
+    background-color: aqua;
+}
+
+table .key_seq_2 {
+    background-color: aquamarine;
+}
+
+table .key_seq_3 {
+    background-color: beige;
+}
+table .key_seq_4 {
+    background-color: lavender;
+}

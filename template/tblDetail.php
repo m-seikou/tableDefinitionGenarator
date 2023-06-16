@@ -94,7 +94,7 @@
 				<td><?= $key->attributes()['Key_name'] ?></td>
 				<td><?= $key->attributes()['Column_name'] ?></td>
 				<td><?= $key->attributes()['Seq_in_index'] ?></td>
-				<td><?= $key->attributes()['Non_unique'] ? 'true' : 'false' ?></td>
+				<td><?= (string)$key->attributes()['Non_unique'] === '0' ? '〇' : '-' ?></td>
 				<td><?= $key->attributes()['Null'] ?></td>
 				<td><?= $key->attributes()['Index_type'] ?></td>
 				<td><?= $key->attributes()['Comment'] ?></td>

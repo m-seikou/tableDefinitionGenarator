@@ -40,6 +40,7 @@ file_put_contents($outputDir . 'index.html', $html);
 foreach ($tblData as $dbName => $database) {
 	foreach ($database as $tblName => $table) {
 		echo "create $dbName.$tblName" . PHP_EOL;
+        sortField($table);
 		$html = createHTML(['tblList' => $tblList, 'table' => $table], TML_ROOT . 'tblDetail.php');
 		file_put_contents($outputDir . DS . $dbName . DS . $tblName . '.html', $html);
 	}
